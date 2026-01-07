@@ -1,0 +1,13 @@
+server:
+  port: ${PORT}
+spring:
+  r2dbc:
+    url: ${URL_DB}
+    username: ${USERNAME_DB}
+    password: ${PSS}
+  sql:
+    init:
+      mode: never
+logging:
+  level:
+    org.springframework.r2dbc: DEBUG
